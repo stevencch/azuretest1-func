@@ -40,7 +40,7 @@ jobs:
         with:
           azcliversion: latest
           inlineScript: |
-            az config set core.encrypt_token_cache=false
+            az account clear
 
       - name: Login to Azure
         uses: azure/login@v2
